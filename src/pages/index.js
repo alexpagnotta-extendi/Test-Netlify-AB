@@ -2,14 +2,14 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Header from "../components/header"
+import HeaderA from "../components/headerA"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Header/>
+    <HeaderA siteTitle='CIAO UTENTE A'/>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
