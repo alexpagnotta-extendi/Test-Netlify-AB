@@ -1,7 +1,15 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
 
-// You can delete this file if you're not using it
+exports.onClientEntry = () => {
+    console.log("onClientEntry")
+}
+
+exports.onInitialClientRender = () => {
+    const timeout = setTimeout(() => {
+     console.log('CAncel')
+    }, 5000)
+
+    window.onbeforeunload = function() {
+        document.cookie = "nf_ab=;expires=Thu, 01 Jan 1970 00:00:01 GMT;"
+    }
+}
+

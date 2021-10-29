@@ -6,8 +6,9 @@ import HeaderA from "../components/headerA"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+
+  return <Layout>
     <Seo title="Home" />
     <HeaderA siteTitle='CIAO UTENTE A'/>
     <h1>Hi people</h1>
@@ -28,6 +29,6 @@ const IndexPage = () => (
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p>
   </Layout>
-)
+}
 
 export default IndexPage
