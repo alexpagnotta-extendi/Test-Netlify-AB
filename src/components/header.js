@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-const Header = () => (
+const Header = ({siteTitle}) => (
   <header
     style={{
       marginBottom: `1.45rem`,
@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: `none`,
           }}
         >
-          Test A Version
+          {siteTitle}
         </Link>
       </h1>
     </div>
