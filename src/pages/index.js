@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { useStaticQuery, graphql } from "gatsby"
-import HeaderB from "../components/HeaderB"
+import HeaderB from "../components/headerB"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
