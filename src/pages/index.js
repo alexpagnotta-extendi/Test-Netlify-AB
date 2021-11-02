@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "../components/header"
+import HeaderB from "../components/HeaderB"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -22,7 +22,7 @@ const IndexPage = () => {
 
   return <Layout>
     <Seo title="Home" />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <HeaderB siteTitle={data.site.siteMetadata.title} />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
