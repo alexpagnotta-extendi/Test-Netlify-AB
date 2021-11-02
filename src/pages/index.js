@@ -2,15 +2,27 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => {
 
+
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
   return <Layout>
     <Seo title="Home" />
-    <Header/>
+    <Header siteTitle={data.site.siteMetadata.title} />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
