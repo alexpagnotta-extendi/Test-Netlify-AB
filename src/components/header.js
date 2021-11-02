@@ -1,16 +1,15 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const HeaderA = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
-      background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80')`,
         margin: `0 auto`,
         maxWidth: 960,
         padding: `5rem 1.0875rem`,
@@ -24,19 +23,11 @@ const HeaderA = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Test A Version
         </Link>
       </h1>
     </div>
   </header>
 )
 
-HeaderA.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-HeaderA.defaultProps = {
-  siteTitle: ``,
-}
-
-export default HeaderA
+export default Header
