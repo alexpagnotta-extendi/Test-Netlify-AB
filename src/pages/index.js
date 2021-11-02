@@ -20,6 +20,8 @@ const IndexPage = () => {
     }
   `)
 
+  console.log('Title: ' + data.site.siteMetadata.title)
+
   return <Layout>
     <Seo title="Home" />
     <Header siteTitle={data.site.siteMetadata.title} />
